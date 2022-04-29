@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(55, 54, 54);
+}
+main{
+    display: flex;
+}
+.current{
+    width: 70vw;
+    height: 95vh;
+    padding: 2rem 0rem 2rem 2rem;
+    background-image: linear-gradient(to top, rgb(0, 0, 0) , rgba(78, 77, 77, 0.632)), url('img/ritam-baishya-ROVBDer29PQ-unsplash.jpg');
+    background-size: cover;
+}
+.important{
+    width: 30vw;
+    height: 95vh;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    overflow: scroll;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.city_name_weath{
+    background-color: rgba(55, 54, 54, 0);
+    outline-style: none;
+    text-align: center;
+    font-size: 5rem;
+    border: 0;
+    color: rgb(221, 220, 220);
+    padding-bottom: 1rem;
+}
+.submit{
+    background-color: rgb(51, 159, 226);
+    border-style: none;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+    color: rgb(46, 47, 47);
+    font-size: 1.15rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: rgb(11, 143, 225);
+    transition: ease 0.5s;
+    transform: scale(1.1);
+}
+.city{
+    margin-bottom: 2rem;
+    position: relative;
+    cursor: pointer;
+}
+.button_city:hover{
+    cursor: pointer;
+}
+.city_img img{
+    /* width: 100%; */
+    height: 14rem;
+}
+.city_img{
+    background-image: linear-gradient(to top, rgb(0, 0, 0) , rgba(78, 77, 77, 0.632));
+    z-index: 10;
+}
+.button_city{
+    background-color: rgba(255, 255, 255, 0);
+    border-style: none;
+    font-size: 2.5rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.city_name{
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(78, 77, 77, 0.632) , rgba(78, 77, 77, 0.632));
+}
+.main_weath{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    margin-top: 12rem;
+}
+.symbol{
+    text-align: center;
+}
+
+.symbol_weath{
+    width: 20%;
+}
+.temp{
+    width: 35%;
+    transform: translateY(-50%);
+}
+.temper{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(221, 220, 220);
+    transform: translateY(-100%);
+}
+.rel_temper{
+    text-align: center;
+    color: rgb(221, 220, 220);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 1000px){
+    .main{
+        display: block;
+        flex-direction: column;
+    }
+    .current{
+        display: block;
+        width: 100vw;
+        height: 70vh;
+        padding: 5px;
+    }
+    .important{
+        display: block;
+        width: 100vw;
+        height: 30vh;
+        padding: 0;
+        position: relative;
+    }
+    .city{
+        margin-bottom: 0;
+        margin-right: 1rem;
+        /* width: 300%; */
+    }
+    .city_weath{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        position: absolute;
+        z-index: 30;
+    }
+    
+}
+@media screen and  (min-width: 1000px) {
+    .city_img img{
+        width: 100%;
+    }
+}

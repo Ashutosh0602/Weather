@@ -1,0 +1,1 @@
+document.querySelectorAll(".temp")[0].innerHTML+=detail[0]

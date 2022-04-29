@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <main class="main">
+        <section class="current">
+            <form action="/city" method="post">
+                <input type="text" placeholder='"city"' class="city_name_weath" name="cityname" required>
+                <input type="submit" value=">" class="submit">
+            </form>
+            <div class="main_weath">
+                <div class="main_visible">
+                    <div class="symbol">
+                        <img class="symbol_weath" src="img/vis.png" alt="">
+                    </div>
+                    <div class="rel_temper">
+                        <span><%= weather[2] %> Km</span>
+                    </div>
+                </div>
+                <div class="main_temp">
+                    <div class="symbol">
+                        <img class="symbol_weath temp" src="img/temp.png" alt="">
+                    </div>
+                    <div class="temper">
+                        <span><%= weather[0] %>|<%= weather[1] %></span>
+                    </div>
+                </div>
+                <div class="main_speed">
+                    <div class="symbol">
+                        <img class="symbol_weath" src="img/wind.png" alt="">
+                    </div>
+                    <div class="rel_temper">
+                        <span><%= weather[3] %> Km/h(<%= weather[4] %>)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="important">
+            <div class="city_weath">
+                <div class="city mumbai">
+                    <div class="city_img">
+                        <img src="img/mum.jpg" alt="">
+                    </div>
+                    <form action="/new_city" method="post">
+                        <input class="button_city city_name" type="submit" value="Mumbai" name="cityName">
+                    </form>
+                </div>
+                <div class="city chennai">
+                    <div class="city_img">
+                        <img src="img/chenn.jpg" alt="" srcset="">
+                    </div>
+                    <form action="/new_city" method="post">
+                        <input class="button_city city_name" type="submit" value="Chennai" name="cityName">
+                    </form>
+                </div>
+                <div class="city kolkata">
+                    <div class="city_img">
+                        <img src="img/kolk.jpg" alt="">
+                    </div>
+                    <form action="/new_city" method="post">
+                        <input class="button_city city_name" type="submit" value="Kolkata" name="cityName">
+                    </form>
+                </div>
+                <div class="city nagpur">
+                    <div class="city_img">
+                        <img src="img/nagpur.jpg" alt="">
+                    </div>
+                    <form action="/new_city" method="post">
+                        <input class="button_city city_name" type="submit" value="Nagpur" name="cityName">
+                    </form>
+                </div>
+                <div class="city lucknow">
+                    <div class="city_img">
+                        <img src="img/luck.jpg" alt="">
+                    </div>
+                    <form action="/new_city" method="post">
+                        <input class="button_city city_name" type="submit" value="Lucknow" name="cityName">
+                    </form>
+                </div>
+                <div class="city srinagar">
+                    <div class="city_img">
+                        <img src="img/srin.jpg" alt="">
+                    </div>
+                    <form action="/new_city" method="post">
+                        <input class="button_city city_name" type="submit" value="Srinagar" name="cityName">
+                    </form>
+                </div>
+                <div class="city paris">
+                    <div class="city_img">
+                        <img src="img/paris.jpg" alt="">
+                    </div>
+                    <form action="/new_city" method="post">
+                        <input class="button_city city_name" type="submit" value="Paris" name="cityName">
+                    </form>
+                </div>
+                <div class="city bejing">
+                    <div class="city_img">
+                        <img src="img/bej.jpg" alt="">
+                    </div>
+                    <form action="/new_city" method="post">
+                        <input class="button_city city_name" type="submit" value="Singapore" name="cityName">
+                    </form>
+                </div>
+                <div class="city tokyo">
+                    <div class="city_img">
+                        <img src="img/tokyo.jpg" alt="">
+                    </div>
+                    <form action="/new_city" method="post">
+                        <input class="button_city city_name" type="submit" value="Tokyo" name="cityName">
+                    </form>
+                </div>
+                <div class="city chicago">
+                    <div class="city_img"></div>
+                    <div class="city_name"></div>
+                </div>
+                <div class="city singapore">
+                    <div class="city_img"></div>
+                    <div class="city_name"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
